@@ -1,0 +1,58 @@
+@import './../../assets/sass/mix'
+@import './../../assets/sass/anim'
+
+
+%absolute-center 
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    margin: auto
+    font-size: 40px
+    font-weight: 900
+    border: none
+    outline: none
+    cursor: pointer
+    padding: 20px 20px
+
+.time
+    font-size: 45px
+    font-weight: 900
+    font-family: system-ui
+    color: crimson
+    width: 100%
+    text-align: center
+
+.startButton
+    @extend %absolute-center
+    height: 50px
+    line-height: 0
+    z-index: 2
+    background: deeppink
+    @include buttonActionDarkenColor(deeppink)
+
+.intoCountButton
+    @extend %absolute-center 
+    top: 200px
+    height: 50px
+    line-height: 0
+    z-index: 2
+    background: deeppink
+    @include buttonActionDarkenColor(deeppink)
+
+.countTable
+    @extend %absolute-center
+    z-index: 3
+    background: #ffe986
+    font-weight: 900
+    font-family: system-ui
+    @include display-flex(null, center, center)
+    border-radius: 25px
+    width: 300px
+    height: 50px
+    span
+        color: #8c08c3
+        animation: animationFrames linear 0.25s
+        animation-iteration-count: 1
+        transform-origin: 50% 50%

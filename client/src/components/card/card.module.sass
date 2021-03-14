@@ -1,0 +1,70 @@
+@import './../../assets/sass/mix'
+@import './../../assets/sass/anim'
+
+
+%card
+    width: 90%
+    height: 90%
+    display: block
+    padding: 14px
+    box-sizing: border-box
+    border-radius: 27px
+    cursor: pointer
+    @include selection(none)
+    position: absolute
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2)
+    -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2)
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2)
+
+.contentCard
+    width: 100px
+    height: 100px
+    position: relative
+    box-sizing: border-box
+    @include selection(none)
+    @include display-flex(null, center, center)
+    @include response(400)
+      width: 25%
+
+.img 
+    @extend %card
+    background: #bc63ff
+    z-index: 2
+    @include selection(none)
+    
+
+.backSide
+    background: #fffb78
+    z-index: 0
+    visibility: hidden
+    @include selection(none)
+    @extend %card
+
+.deletedCard
+    @include display-flex(null, center, center)
+    box-sizing: border-box
+    height: 100%
+    padding: 15px
+    font-size: 45px
+    font-weight: 900
+    font-family: system-ui
+    color: #ff6600
+    @include selection(none)
+
+.deletedCard
+  animation: animationFrames linear 0.25s
+  animation-iteration-count: 1
+  transform-origin: 50% 50%
+  -webkit-animation: animationFrames linear 0.25s
+  -webkit-animation-iteration-count: 1
+  -webkit-transform-origin: 50% 50%
+  -moz-animation: animationFrames linear 0.25s
+  -moz-animation-iteration-count: 1
+  -moz-transform-origin: 50% 50%
+  -o-animation: animationFrames linear 0.25s
+  -o-animation-iteration-count: 1
+  -o-transform-origin: 50% 50%
+  -ms-animation: animationFrames linear 0.25s
+  -ms-animation-iteration-count: 1
+  -ms-transform-origin: 50% 50%
+

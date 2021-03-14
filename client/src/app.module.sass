@@ -1,0 +1,22 @@
+@import './assets/sass/mix'
+    
+.area
+    width: 600px
+    height: 600px
+    display: flex
+    flex-wrap: wrap
+    padding: 20px
+    margin: auto
+    background: linear-gradient(to right, #f7f7f7, #fff6ff)
+    @include response(450)
+        width: 400px
+        height: 100%
+    @include response(400)
+        width: 100%
+        padding: 5%
+        height: 100%
+        box-sizing: border-box
+    
+
+body
+    margin: 0
