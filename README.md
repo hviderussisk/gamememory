@@ -10,3 +10,5 @@
 
 ## npm run dev запустит в режиме разработки client приложение и сервер
 
+
+# [Ссылка на игру https://gamememory.herokuapp.com/ ](https://gamememory.herokuapp.com/ )
